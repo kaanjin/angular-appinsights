@@ -1,10 +1,10 @@
 {
-  "name": "angular-appinsights",
+  "name": "angular-appinsights-strict",
   "main": "angular-appinsights.js",
   "version": "0.0.3",
-  "homepage": "https://github.com/johnhidey/angular-appinsights",
+  "homepage": "https://github.com/kaanjin/angular-appinsights",
   "authors": [
-    "johnhidey <john@hidey.com>"
+    "johnhidey <me@hidey.com>, vitali-d <me@vitali.rocks>"
   ],
   "description": "A angular module for using Microsoft's Application Insights within a SPA",
   "keywords": [
