@@ -1,7 +1,7 @@
 {
   "name": "angular-appinsights-strict",
   "main": "angular-appinsights-strict.js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/kaanjin/angular-appinsights",
   "authors": [
     "johnhidey <me@hidey.com>, vitali-d <me@vitali.rocks>"

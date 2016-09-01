@@ -63,12 +63,18 @@
 
         })
 
-        .run(['$rootScope', '$route', '$location', 'insights', function ($rootScope, $route, $location, insights) {
+        .run(['$rootScope', '$location', 'insights', function ($rootScope, $location, insights) {
             $rootScope.$on('$locationChangeSuccess', function() {
-                var pagePath;
+                var pagePath = '/';
+                var matches;
+                var tokenRegex = /\/oauthcallback\/access_token=(.*?)&/;
                 try {
-                    pagePath = $location.path().substr(1);
-                    pagePath =  insights.appName + '/' + pagePath;
+                    pagePath += $location.path().substr(1);
+                    matches = tokenRegex.exec(pagePath);
+                    if (matches !== null) {
+                        pagePath = pagePath.replace(matches[1], 'TOKEN_REPLACED');
+                    };
+                 
                 }
                 finally {
                     insights.logPageView(pagePath);
