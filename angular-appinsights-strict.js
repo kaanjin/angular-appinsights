@@ -74,6 +74,6 @@
                     insights.logPageView(pagePath);
                 }
             });
-        });
+        }]);
 
 }());
